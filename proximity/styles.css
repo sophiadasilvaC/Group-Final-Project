@@ -1,0 +1,337 @@
+body
+{
+    background-color: #ECECEC;
+    margin: 0;
+}
+
+/* This is the custom font section */
+.inter-paragraph {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+main p {
+    text-align: center;
+    /* I'll find a better way to do this later. Can't put it in .inter-paragraph as that affects the logo. */
+}
+
+.archivo-heading {
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+}
+
+/* -------------------------------------------- Start of Nav stuff --------------------------------------------------- */
+nav
+{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.logo-image
+{
+    position:relative;
+    padding: 1.2em;
+}
+
+.triangle-image
+{
+    position:relative;
+    margin-bottom: 0.1em;
+}
+
+nav ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#FFFFFF;
+}
+
+nav li
+{
+    margin-top: 2.2em;
+    margin-right: 2.2em;
+
+    /* makes user able to touch stuff below */
+    /* padding-bottom: 2em; */
+
+    float: right;
+}
+
+nav li a
+{
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    padding: 0 0.3em;
+}
+
+#currentPage {
+    border-bottom: 4px solid #616DDC;
+}
+#currentPageDrop {
+    border-top: 0;
+}
+
+.dropbtn
+{
+    padding-bottom: 2em;
+    /* This is so you can reach the dropdown options without the menu disappearing */
+}
+
+.dropdown
+{
+    display: inline-block;
+}
+
+.dropdown-stuff
+{
+    display: none;
+
+    /* to make dropdown stuff goes to border */
+    /* margin-top: 2em; -- See .dropbtn */
+    margin-left: -1%;
+
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width:8.5em;
+    z-index: 1;
+    border-top: solid 4px #616DDC;
+}
+
+.dropdown-stuff a
+{
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 4%;
+    padding-bottom: 5%;
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    /* Can't figure out how to make the line shorter. Will remove this comment once it is solved */
+    border-bottom: 1px #ECECEC solid;
+}
+
+.dropdown:hover .dropdown-stuff
+{
+    display: block;
+}
+
+/* -------------------------------------------- End of Nav stuff --------------------------------------------------- */
+
+
+
+main {
+    margin: 0;
+}
+hr {
+    max-width: 1100px;
+}
+#topHeader {  /* section h1 */
+    color: #616ddc;
+    font-size: 2.5em;
+    margin: 0.5em auto;
+}
+section h2 {
+    font-size: 2em;
+}
+section h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.6em;
+}
+section p {
+    margin: 0 auto;
+}
+
+#Definition {
+    padding: 3.5em 0;
+}
+#Definition p {
+    max-width: 860px;
+}
+
+#Examples, #Demo, #Quiz {
+    margin: 1em auto;
+}
+
+#Examples {
+    overflow: auto;
+    background-color: white;
+}
+#Examples p {
+    max-width: 640px;
+    font-size: 1.2em;
+}
+#ExamplesGrid {
+    margin: 4em auto;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+#ExamplesGrid img {
+    max-width: 30em;
+    border: 2px solid black;
+}
+
+#Demo {
+    padding: 2em 0;
+    text-align: center;
+}
+#Demo p {
+    max-width: 640px;
+    font-size: 1.2em;
+}
+.main-box {
+    width: 100%;
+    position: relative;
+    max-width: 800px;
+    height: 566px;
+    background-color: #F1ABF8;
+    margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+    .main-box {
+        max-width: 491px; /* Adjust width for mobile */
+        height: 380px;    /* Adjust height for mobile */
+    }
+}
+
+
+.drag-box {
+    display: flex;
+    width: 100%;
+    max-width: 65em;
+    height: 16em;
+    background-color: transparent;
+    margin: 20px auto;
+    border: 2px solid #000000;
+    position: relative;
+    overflow: scroll;
+    box-sizing: border-box;
+}
+
+.box {
+    display: inline-block;
+    position: absolute;
+    cursor: grab;
+    margin: 4px;
+    width: 10%; 
+    height: 10%;
+    transition: all 0.2s ease;
+}
+
+
+/* Initial sizes of the boxes */
+#box1, #box2, #box3 {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+    width: 108px;
+    height: 66px;
+}
+
+#box4 {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+    width: 448px;
+    height: 98px;
+}
+#box5, #box6 {
+    width: 448px;
+    height: 98px;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+#Quiz {
+    padding: 2em 0;
+    overflow: auto;
+    background-color: white;
+    margin-bottom: 0;
+}
+#QuizForm {
+    max-width: 900px;
+    margin: 3em auto;
+    padding: 2em;
+    background-color: #ECECEC;
+    border: 1px solid black;
+    text-align: left;
+}
+#QuizForm > * {
+    display: inline-block;
+}
+#QuizForm img {
+    max-width: 25em;
+    border: 2px solid black;
+    float: right;
+}
+#QuizForm h3 {
+    margin-top: 0;
+}
+#quizSubmit {
+    border: 1px solid #616ddc;
+    border-radius: 7px;
+    background-color: #616ddc;
+    color: white;
+    padding: 0.5em 2.5em;
+}
+#quizSubmit:hover {
+    background-color: #343b75;
+}
+
+
+
+/* -------------------------------------------- Start of Footer stuff --------------------------------------------------- */
+
+.footerStyle
+{
+    height: 9em;
+    width: 100%;
+    background-color: #2D2B34;
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.footerContainer
+{
+    position: relative;
+    margin-top: 0.5%;
+    margin-left: 4%;
+    margin-right: 4%;
+    border-bottom: 0.1px solid white;
+}
+
+
+footer div li
+{
+    list-style-type: none;
+    /* makes user able to touch stuff below */
+    float: right;
+    margin-right: 1.5em;
+    margin-top: 2.5em;
+}
+
+footer div li a
+{
+    display:flex;
+    text-decoration: none;
+    color:#FFF;
+}
+
+footer p
+{
+    text-align: center;
+}

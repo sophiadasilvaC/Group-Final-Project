@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proximity - DesignSense</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="../media/images/Logo-Icon.png">
+
+        <!-- This is for setting the custom fonts --> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter">       <!-- Body -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo">     <!-- Head -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">  <!-- Link -->
+
+    </head>
+
+    <body>
+        <!--------------------------------------------------- Nav Bar Starts ---------------------------------------------------------------------->
+        <nav class="inter-paragraph">
+            <ul>
+                <img class="logo-image" 
+                    alt="A orange triangle, pink circle, blue square overlap together with the black name" 
+                    src="../media/images/Logo-Pic-With-Black-Name.png"
+                    width="200"
+                    height="45" 
+                />
+                <!-- the reason why order is odd is because of float:right; -->
+                <li class="dropdown">
+                    <a id="currentPage" href="../proximity/index.html" class="dropbtn">Proximity</a>
+
+                    <img class="triangle-image"
+                        alt="A orange triangle, pink circle, blue square overlap together with the black name" 
+                        src="../media/images/Flipped-Black-Triangle.png"
+                        width="7"
+                        height="8" 
+                    />
+
+                    <div class="dropdown-stuff" id="currentPageDrop">
+                        <a href="../proximity/index.html#Definition">Definition</a>
+                        <a href="../proximity/index.html#Examples">Examples</a>
+                        <a href="../proximity/index.html#Demo">Demonstration</a>
+                        <a href="../proximity/index.html#Quiz">Quiz</a>
+                    </div>
+                </li>
+
+                <li class="dropdown"> 
+                    <a href="../alignment/index.html" class="dropbtn">Alignment</a>
+
+                    <img class="triangle-image"
+                        alt="A orange triangle, pink circle, blue square overlap together with the black name" 
+                        src="../media/images/Flipped-Black-Triangle.png"
+                        width="7"
+                        height="8" 
+                    />
+
+                    <div class="dropdown-stuff">
+                        <a href="../alignment/index.html#Definition">Definition</a>
+                        <a href="../alignment/index.html#Examples">Examples</a>
+                        <a href="../alignment/index.html#Demo">Demonstration</a>
+                        <a href="../alignment/index.html#Quiz">Quiz</a>
+                    </div>
+                </li>
+                
+                <li class="dropdown"> 
+                    
+                    <a href="../repetition/index.html" class="dropbtn">Repetition</a>
+
+                    <img class="triangle-image"
+                        alt="A orange triangle, pink circle, blue square overlap together with the black name" 
+                        src="../media/images/Flipped-Black-Triangle.png"
+                        width="7"
+                        height="8" 
+                    />
+
+                    <div class="dropdown-stuff">
+                        <a href="../repetition/index.html#Definition">Definition</a>
+                        <a href="../repetition/index.html#Examples">Examples</a>
+                        <a href="../repetition/index.html#Demo">Demonstration</a>
+                        <a href="../repetition/index.html#Quiz">Quiz</a>
+                    </div>
+                </li>                
+
+                <li class="dropdown"> 
+                    <a href="../contrast/index.html" class="dropbtn">Contrast</a>
+
+                    <img class="triangle-image"
+                        alt="A orange triangle, pink circle, blue square overlap together with the black name" 
+                        src="../media/images/Flipped-Black-Triangle.png"
+                        width="7"
+                        height="8" 
+                    />
+
+                    <div class="dropdown-stuff">
+                        <a href="../contrast/index.html#Definition">Definition</a>
+                        <a href="../contrast/index.html#Examples">Examples</a>
+                        <a href="../contrast/index.html#Demo">Demonstration</a>
+                        <a href="../contrast/index.html#Quiz">Quiz</a>
+                    </div>
+                </li>
+
+                <li> 
+                    <a class="dropbtn" href="../index.html">Home</a>
+                </li>
+            </ul>
+        </nav>
+        <!--------------------------------------------------- Nav Bar Ends ------------------------------------------------------------------------>
+
+
+
+
+
+        <!--------------------------------------------------- Main content starts ------------------------------------------------------------------------>
+
+        <main>
+            <section id="Definition">
+                <h1 class="archivo-heading" id="topHeader">What is Proximity?</h1>
+                <p class="inter-paragraph">
+                    Proximity is a principle of design that refers to the spatial relationship between the elements of the design. The 
+                    rules of proximity are pretty simple: things that are related should be nearer to each other, and things that are 
+                    unrelated should be placed further from each other.
+                </p>
+            </section>
+
+
+
+            <section id="Examples">
+                <h2 class="archivo-heading">Good vs. Bad Design Examples</h2>
+                <hr>
+
+
+
+                <h3 class="archivo-heading">Organization:</h3>
+                <p class="inter-paragraph">
+                    Proximity helps organize a design by creating clear separation 
+                    between different elements, making the layout easier to navigate and 
+                    understand.
+                </p>
+
+                <section id="ExamplesGrid">
+                    <div>
+                        <img src="images/OrganizationGood.png" alt="Good example of Organization">
+                        <p class="inter-paragraph">
+                            <em>Good Example of Organization</em>
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <img src="images/OrganizationBad.jpg" alt="Bad example of Organization">
+                        <p class="inter-paragraph">
+                            <em>Bad Example of Organization</em>
+                        </p>
+                    </div>
+                </section>
+                <hr>
+
+
+
+                <h3 class="archivo-heading">Connection:</h3>
+                <p class="inter-paragraph">
+                    Proximity connects related elements by placing them close 
+                    together, helping users quickly see which items belong together.
+                </p>
+
+                <section id="ExamplesGrid">
+                    <div>
+                        <img src="images/ConnectionGood.png" alt="Good example of Connection">
+                        <p class="inter-paragraph">
+                            <em>Good Example of Connection</em>
+                        </p>
+                    </div>
+
+                    <div>
+                        <img src="images/ConnectionBad.jpg" alt="Bad example of Connection">
+                        <p class="inter-paragraph">
+                            <em>Bad Example of Connection</em>
+                        </p>
+                    </div>
+                </section>
+                <hr>
+
+
+
+                <h3 class="archivo-heading">Grouping:</h3>
+                <p class="inter-paragraph">
+                    Proximity groups similar content, ensuring that related items are 
+                    visually grouped, while unrelated items are spaced apart for clarity.
+                </p>
+
+                <section id="ExamplesGrid">
+                    <div>
+                        <img src="images/GroupingGood.png" alt="Good example of Grouping">
+                        <p class="inter-paragraph">
+                            <em>Good Example of Grouping</em>
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <img src="images/GroupingBad.png" alt="Bad example of Grouping">
+                        <p class="inter-paragraph">
+                            <em>Bad Example of Grouping</em>
+                        </p>
+                    </div>
+                </section>
+                <br><br>
+            </section>
+
+
+
+            <section id="Demo">
+                <h2 class="archivo-heading">Try It Yourself: Adjust the Proximity</h2>
+                <p class="inter-paragraph">
+                    Drag and drop the items below to organize the design. Group related 
+                    elements close together and space unrelated elements apart. Watch 
+                    how proper proximity improves the clarity and flow of the layout.
+                </p>
+                <br>
+        
+                <div class="main-box" id="main-box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <br>
+                <p class="inter-paragraph">Drag and drop the items below</p>
+            
+                <div class="drag-box" id="dragBox" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <!-- 3 boxes 108x66 -->
+                    <div class="box" id="box1" style="top: 140px; left: 560px;" draggable="true" ondragstart="drag(event)"></div>
+                    <div class="box" id="box2" style="top: 140px; left: 720px;" draggable="true" ondragstart="drag(event)"></div>
+                    <div class="box" id="box3" style="top: 140px; left: 880px;" draggable="true" ondragstart="drag(event)"></div>
+            
+                    <!-- 2 boxes 448x98 -->
+                    <div class="box" id="box4" style="top: 110px; left: 20px;" draggable="true" ondragstart="drag(event)"></div>
+                    <div class="box archivo-heading" id="box5" style="top: 20px; left: 20px;" draggable="true" ondragstart="drag(event)"><h3>Lorem Ipsum</h3></div>
+                    <div class="box inter-paragraph" id="box6" style="top: 40px; left: 560px;" draggable="true" ondragstart="drag(event)"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></div>
+                </div>
+            </section>
+
+
+
+            <section id="Quiz">
+                <h2 class="archivo-heading">Quiz: Test Your Knowledge of Proximity</h2>
+
+                <form id="QuizForm">
+                    <img src="images/ConnectionGood.png" alt="Quiz Image">
+
+                    <h3 class="archivo-heading">Proximity Quiz</h3>                     <br>
+                    <p class="inter-paragraph">Question 1 of 10:</p>                    <br><br>
+                    <p class="inter-paragraph">Is this a good example of Proximity?</p> <br><br><br>
+
+                    <input type="radio" id="quizYes" name="quizAns" value="Yes">
+                    <label for="quizYes" class="inter-paragraph">Yes</label>                                    <br><br>
+                    <input type="radio" id="quizNo"  name="quizAns" value="No" >
+                    <label for="quizNo"  class="inter-paragraph">No</label>                                     <br><br>
+
+                    <br>
+                    <input type="button" id="quizSubmit" class="inter-paragraph" value="Submit">
+                </form>
+
+            </section>
+        </main>
+
+        <!--------------------------------------------------- Main content ends ------------------------------------------------------------------------>
+
+
+
+
+
+        <!--------------------------------------------------- Footer Starts ---------------------------------------------------------------------->
+        <footer class = "footerStyle"  id = "about">
+            <div class = "footerContainer">
+                <img class="logo-image" 
+                    alt="A orange triangle, pink circle, blue square overlap together with the black name" 
+                    src="../media/images/Logo-Pic-With-White-Name.png"
+                    width="200"
+                    height="45"
+                />
+
+                <li> 
+                    <a href="../index.html#contact">Contact Us</a>
+                </li>
+                
+                <li>
+                    <a href="../index.html#about">About Us</a>
+                </li>
+            </div>
+
+            <p>
+                &copy DesignSense
+            </p>
+
+        </footer>
+        <!--------------------------------------------------- Footer Ends ------------------------------------------------------------------------>
+        <script src="../alignment/script.js" defer></script>
+    </body>
+
+</html>

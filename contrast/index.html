@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contrast - DesignSense</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="../media/images/Logo-Icon.png">
+
+        <!-- This is for setting the custom fonts --> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter">       <!-- Body -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo">     <!-- Head -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">  <!-- Link -->
+
+    </head>
+
+    <body>
+        <!--------------------------------------------------- Nav Bar Starts ---------------------------------------------------------------------->
+        <nav class="inter-paragraph">
+            <ul>
+                <img class="logo-image" 
+                    alt="A orange triangle, pink circle, blue square overlap together with the black name" 
+                    src="../media/images/Logo-Pic-With-Black-Name.png"
+                    width="200"
+                    height="45" 
+                />
+                <!-- the reason why order is odd is because of float:right; -->
+                <li class="dropdown">
+                    <a href="../proximity/index.html" class="dropbtn">Proximity</a>
+
+                    <img class="triangle-image"
+                        alt="A orange triangle, pink circle, blue square overlap together with the black name" 
+                        src="../media/images/Flipped-Black-Triangle.png"
+                        width="7"
+                        height="8" 
+                    />
+
+                    <div class="dropdown-stuff">
+                        <a href="../proximity/index.html#Definition">Definition</a>
+                        <a href="../proximity/index.html#Examples">Examples</a>
+                        <a href="../proximity/index.html#Demo">Demonstration</a>
+                        <a href="../proximity/index.html#Quiz">Quiz</a>
+                    </div>
+                </li>
+
+                <li class="dropdown"> 
+                    <a href="../alignment/index.html" class="dropbtn">Alignment</a>
+
+                    <img class="triangle-image"
+                        alt="A orange triangle, pink circle, blue square overlap together with the black name" 
+                        src="../media/images/Flipped-Black-Triangle.png"
+                        width="7"
+                        height="8" 
+                    />
+
+                    <div class="dropdown-stuff">
+                        <a href="../alignment/index.html#Definition">Definition</a>
+                        <a href="../alignment/index.html#Examples">Examples</a>
+                        <a href="../alignment/index.html#Demo">Demonstration</a>
+                        <a href="../alignment/index.html#Quiz">Quiz</a>
+                    </div>
+                </li>
+                
+                <li class="dropdown"> 
+                    
+                    <a href="../repetition/index.html" class="dropbtn">Repetition</a>
+
+                    <img class="triangle-image"
+                        alt="A orange triangle, pink circle, blue square overlap together with the black name" 
+                        src="../media/images/Flipped-Black-Triangle.png"
+                        width="7"
+                        height="8" 
+                    />
+
+                    <div class="dropdown-stuff">
+                        <a href="../repetition/index.html#Definition">Definition</a>
+                        <a href="../repetition/index.html#Examples">Examples</a>
+                        <a href="../repetition/index.html#Demo">Demonstration</a>
+                        <a href="../repetition/index.html#Quiz">Quiz</a>
+                    </div>
+                </li>                
+
+                <li class="dropdown"> 
+                    <a id="currentPage" href="../contrast/index.html" class="dropbtn">Contrast</a>
+
+                    <img class="triangle-image"
+                        alt="A orange triangle, pink circle, blue square overlap together with the black name" 
+                        src="../media/images/Flipped-Black-Triangle.png"
+                        width="7"
+                        height="8" 
+                    />
+
+                    <div class="dropdown-stuff" id="currentPageDrop">
+                        <a href="../contrast/index.html#Definition">Definition</a>
+                        <a href="../contrast/index.html#Examples">Examples</a>
+                        <a href="../contrast/index.html#Demo">Demonstration</a>
+                        <a href="../contrast/index.html#Quiz">Quiz</a>
+                    </div>
+                </li>
+
+                <li> 
+                    <a class="dropbtn" href="../index.html">Home</a>
+                </li>
+            </ul>
+        </nav>
+        <!--------------------------------------------------- Nav Bar Ends ------------------------------------------------------------------------>
+
+
+
+
+
+        <!--------------------------------------------------- Main content starts ------------------------------------------------------------------------>
+
+        <main>
+            <div id="header">
+                <h1 class="archivo-heading" id="Definition">What is Contrast?</h1>
+                <p class="inter-paragraph">
+                    Contrast refers to the visual difference between two elements, such as color, size, shape, or texture. Designers 
+                    use contrast to guide the user's eye, make important elements stand out, and create visual hierarchy.
+                </p>
+            </div>
+
+            <section id="whiteBackground">
+                <div id="Examples">
+                    <h1 class="archivo-heading" id="mainHeader"> Good vs. Bad Design Examples</h1>
+                    <div class="blackUnderline"></div>
+
+                    <div>
+                        <h1 class="archivo-heading" id="secondaryHeader">Color contrast:</h1>
+                        <p class="inter-paragraph" style="margin-bottom: 3%;">
+                            Color contrast is the difference in brightness between foreground and background colors.
+                        </p>
+
+                        <section id="imgsOrder">
+                            <div>
+                                <img
+                                alt="The dark blue background with white latin sentences" 
+                                src="images/contrastGoodColor.png"
+                                width="580"
+                                height="470"/>
+                                <p class="inter-paragraph">Good Example of Color Contrast</p>
+                            </div>
+
+                            <div>
+                                <img 
+                                alt="The light yellow background with white latin sentences" 
+                                src="images/contrastBadColor.png"
+                                width="580"
+                                height="470"/>
+                                <p class="inter-paragraph">Bad Example of Color Contrast</p>
+                            </div>
+                        </section>
+                        
+                        <br>
+                        <br>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <div class="blackUnderline"></div>
+                    <div>
+                        <h1 class="archivo-heading" id="secondaryHeader">Size contrast:</h1>
+                        <p class="inter-paragraph" style="margin-bottom: 3%;">
+                            When combining shapes, each of a different size, we create size contrast and emphasize that the larger one is more important.
+                        </p>
+
+                        <section id="imgsOrder">
+                            <div>
+                                <img
+                                alt="The dark blue background with white latin sentences" 
+                                src="images/contrastGoodSize.jpeg"
+                                width="580"
+                                height="470"/>
+                                <p class="inter-paragraph">Good Example of Size Contrast</p>
+                            </div>
+
+                            <div>
+                                <img 
+                                alt="The light yellow background with white latin sentences" 
+                                src="images/contrastBadSize.jpeg"
+                                width="580"
+                                height="470"/>
+                                <p class="inter-paragraph">Bad Example of Size Contrast</p>
+                            </div>
+                        </section>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="blackUnderline"></div>
+                    <div>
+                        <h1 class="archivo-heading" id="secondaryHeader">Font contrast:</h1>
+                        <p class="inter-paragraph" style="margin-bottom: 3%;">
+                            Font contrast refers to the intentional use of varied sizes, weights, and colors within a text to create a visual hierarchy and enhance readability.
+                        </p>
+
+                        <section id="imgsOrder">
+                            <div>
+                                <img
+                                alt="The dark blue background with white latin sentences" 
+                                src="images/contrastGoodFont.jpeg"
+                                width="580"
+                                height="470"/>
+                                <p class="inter-paragraph">Good Example of Font Contrast</p>
+                            </div>
+
+                            <div>
+                                <img 
+                                alt="The light yellow background with white latin sentences" 
+                                src="images/contrastBadFont.jpeg"
+                                width="580"
+                                height="470"/>
+                                <p class="inter-paragraph">Bad Example of Font Contrast</p>
+                            </div>
+                        </section>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Demo">
+                <h1 class="archivo-heading" id="mainHeader" style="font-size: 2rem;"> Explore Different Levels of Contrast</h1>
+                <p class="inter-paragraph" style="margin-bottom: 3%;text-align: center;">
+                    Click the button to cycle through different levels of contrast and see how it affects readability.
+                </p>
+
+                <section id="imgsOrder">
+                    <img 
+                    alt="The light yellow background with white latin sentences" 
+                    src="images/placeholder.jpeg"
+                    width="580"
+                    height="470"/>
+                </section>
+                <p class="inter-paragraph" style="text-align: center; font-size: 0.8rem;margin-top: 1.5%;">High Contrast</p>
+                <div style="text-align: center; padding: 0;">
+                    <button type="button" class="purpleButton">Next</button>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+            </section>
+
+
+            <section id="whiteBackground">
+                <h1 class="archivo-heading" style="padding-top: 4%; padding-bottom: 3%;">Quiz: Test Your Knowledge of Contrast</h1>
+                
+                <form class="quiz" id="Quiz">
+                    <div>
+                        <h1 class="archivo-heading" style="font-size: 1.5rem;">Contrast Quiz</h1>
+                        <p class="inter-paragraph">Question 1 of 10: </p>
+                        <p class="inter-paragraph">Is this bad color contrast? </p>
+
+                        <div>
+                            <input type="radio" id="yes" name="userResponse" value="yes">
+                            <label for="yes" class="inter-paragraph">Yes</label>
+                            <br>
+                            <br>
+                            <input type="radio" id="no" name="userResponse" value="no">
+                            <label for="no" class="inter-paragraph">No</label>
+                        </div>
+
+                        <br>
+                        <br>
+                        <button type="button" class="purpleButton">Submit</button>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </form>
+                <br>
+                <br>
+                <br>
+            </section>
+
+        </main>
+
+        <!--------------------------------------------------- Main content ends ------------------------------------------------------------------------>
+
+
+
+
+
+        <!--------------------------------------------------- Footer Starts ---------------------------------------------------------------------->
+        <footer class = "footerStyle"  id = "about">
+            <div class = "footerContainer">
+                <img class="logo-image" 
+                    alt="A orange triangle, pink circle, blue square overlap together with the black name" 
+                    src="../media/images/Logo-Pic-With-White-Name.png"
+                    width="200"
+                    height="45"
+                />
+
+                <li> 
+                    <a href="../index.html#contact">Contact Us</a>
+                </li>
+                
+                <li>
+                    <a href="../index.html#about">About Us</a>
+                </li>
+            </div>
+
+            <p>
+                &copy DesignSense
+            </p>
+
+        </footer>
+        <!--------------------------------------------------- Footer Ends ------------------------------------------------------------------------>
+    </body>
+
+</html>
